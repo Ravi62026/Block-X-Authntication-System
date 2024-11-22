@@ -13,7 +13,7 @@ This application integrates Wallet Connect for user authentication and uses the 
   
 ![home](public/home.png)
 
-
+ 
 ## Usage
 **Connect Wallet:** 
 - Click on the "Connect Wallet" button to connect with wallet of your choice (eg. Metamask).
