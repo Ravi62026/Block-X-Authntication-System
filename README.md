@@ -11,9 +11,8 @@ This application integrates Wallet Connect for user authentication and uses the 
 - **VITE_APP_WALLET_PROJECT_ID** = "".
 - **Go https://cloud.reown.com/sign-in and get project id**.
   
-![home](public/Screenshot 2024-11-22 164232.png)
+![home](public/home.png)
 
-![Wallet Login]()
 
 ## Usage
 **Connect Wallet:** 
