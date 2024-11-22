@@ -13,6 +13,7 @@ This application integrates Wallet Connect for user authentication and uses the 
   
 ![home](public/Screenshot 2024-11-22 164232.png)
 
+![Wallet Login]()
 
 ## Usage
 **Connect Wallet:** 
