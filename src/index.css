@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .bg {
+  background-image: url('/bg.jpg');
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+} */
+
+/* .glow-green {
+  box-shadow: 0 0 40px 10px rgba(0, 255, 0, 0.404);
+} */
+
+@keyframes animate-gradient-x {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes animate-float {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+  }
+}
+
+@keyframes animate-fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* index.css or App.css */
+
+/* Set a global background for the body */
+body {
+  background: linear-gradient(135deg, rgba(72, 233, 170, 0.8), rgba(26, 115, 232, 0.8));
+  background-attachment: fixed; /* This makes the background fixed */
+  min-height: 100vh; /* Ensure the background covers the entire viewport */
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Ensure all sections and content have a consistent background */
+section, .content {
+  background: rgba(255, 255, 255, 0.2); /* semi-transparent white */
+  backdrop-filter: blur(10px); /* Background blur effect */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+/* Add specific hover effects and transitions as needed */
+.w3m-button {
+  background-color: #4CAF50; /* Green button */
+  border-radius: 10px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.w3m-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Add a nice smooth scroll effect */
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,51 @@
+@keyframes color-change {
+  0% {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  }
+  25% {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+  }
+  50% {
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+  }
+  75% {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+  }
+  100% {
+    background: linear-gradient(45deg, #00b09b, #96c93d);
+  }
+}
+
+@keyframes moveText {
+  0% {
+    transform: translate(-100%, -100%);
+  }
+  50% {
+    transform: translate(100%, 100%);
+  }
+  100% {
+    transform: translate(-100%, -100%);
+  }
+}
+
+.animate-float {
+  animation: moveText 15s infinite alternate ease-in-out;
+  position: absolute;
+  color: white;
+  font-size: 5rem;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.background {
+  animation: color-change 10s infinite alternate;
+  height: 100vh; /* Make sure the background covers the entire screen */
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensures text stays on top */
+}

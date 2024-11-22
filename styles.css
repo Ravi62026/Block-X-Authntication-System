@@ -1,0 +1,28 @@
+/* styles.css or any CSS file you prefer */
+
+/* Ripple Effect */
+@keyframes ripple {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+  
+  /* Button Ripple Effect */
+  .w3m-button:hover::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    animation: ripple 0.6s linear;
+    transform: translate(-50%, -50%);
+  }
+  
