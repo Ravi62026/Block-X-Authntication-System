@@ -1,4 +1,4 @@
-# <img src="https://github.com/user-attachments/assets/7663940c-9ce8-4259-bc87-ea523a221046" width="40"> SecureConnect 
+# <img src="https://github.com/user-attachments/assets/7663940c-9ce8-4259-bc87-ea523a221046" width="40"> Block-X Auth System 
 ## Overview
 This application integrates Wallet Connect for user authentication and uses the Anon Aadhaar SDK to verify Aadhaar citizenship securely with zero-knowledge proofs, ensuring privacy-preserving verification.
 
